@@ -6,12 +6,14 @@ Please follow below steps to install Visual Studio code editor on CentOS/RHEL
 
 step1: Import Microsoft GPG key
    sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+
 step2: create the following repo file to enable the Visual Studio Code repository
    sudo nano /etc/yum.repos.d/vscode.repo
    
    Paste the following content into the file:
 
 ```
+[code]
 name=Visual Studio Code
 baseurl=https://packages.microsoft.com/yumrepos/vscode/
 enabled=1
